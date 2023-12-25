@@ -1,6 +1,4 @@
-# 第1引数に商品の金額、第2引数に消費税（10%）を設定できるようにしてください。
-def nedan(price,tax):
-  total=price*(1+(tax/100))
-  print(f"{total}円")
-
-nedan(1000,10)
+def total_price(product_price, tax_rate=0.1):
+    total = product_price * (1 + tax_rate)
+    return print(f"{total}円")
+total_price(1000)
