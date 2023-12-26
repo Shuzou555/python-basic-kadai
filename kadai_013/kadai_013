@@ -1,4 +1,4 @@
-def total_price(product_price, tax_rate=0.1):
-    total = product_price * (1 + tax_rate)
+def total_price(product_price, tax_rate):
+    total = product_price * (1 + (0.01*tax_rate))
     return print(f"{total}円")
-total_price(1000)
+total_price(1000,10)
