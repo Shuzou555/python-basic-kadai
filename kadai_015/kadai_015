@@ -1,0 +1,22 @@
+class Human:
+  # コンストラクタを定義する
+  def __init__(self):
+        self.name = ""
+        self.age = ""
+  #メソッドを定義する
+  def printinfo(self,name,age):
+    self.name=name
+    self.age=age
+
+  def show_name(self):
+      print(self.name)
+  def show_age(self):
+      print(self.age)
+
+# インスタンス化する
+human = Human()
+
+# 属性にアクセスし、値を出力する
+human.printinfo("松岡",29)
+human.show_name()
+human.show_age()
